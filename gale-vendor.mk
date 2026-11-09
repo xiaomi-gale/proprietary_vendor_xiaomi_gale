@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/etc/AudioDump_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/AudioDump_dynamic.ds \
     vendor/xiaomi/gale/proprietary/vendor/etc/AudioLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.ds \
     vendor/xiaomi/gale/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/xiaomi/gale/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/xiaomi/gale/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2439:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2439 \
     vendor/xiaomi/gale/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2439_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2439_ENUM \
     vendor/xiaomi/gale/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
@@ -352,6 +353,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/gale/proprietary/vendor/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/uwsuperlowlightshot.json \
     vendor/xiaomi/gale/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
+    vendor/xiaomi/gale/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
     vendor/xiaomi/gale/proprietary/vendor/etc/dsi_panel_c3uv_35_03_0b_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_c3uv_35_03_0b_vdo_mi.xml \
     vendor/xiaomi/gale/proprietary/vendor/etc/dsi_panel_c3uv_42_0f_0d_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_c3uv_42_0f_0d_vdo_mi.xml \
     vendor/xiaomi/gale/proprietary/vendor/etc/dsi_panel_c3uv_43_02_0a_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_c3uv_43_02_0a_vdo_mi.xml \
@@ -411,6 +413,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
@@ -424,14 +427,30 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-tms_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF.conf \
     vendor/xiaomi/gale/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/xiaomi/gale/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
+    vendor/xiaomi/gale/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
+    vendor/xiaomi/gale/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/gale/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/xiaomi/gale/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/gale/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/xiaomi/gale/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/xiaomi/gale/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
     vendor/xiaomi/gale/proprietary/vendor/etc/smartpa_param/AW_SINWAVE_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_SINWAVE_DSP.bin \
+    vendor/xiaomi/gale/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
+    vendor/xiaomi/gale/proprietary/vendor/etc/sn100u_pnx_chr.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_chr.pnscr \
+    vendor/xiaomi/gale/proprietary/vendor/etc/sn100u_pnx_cui.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_cui.pnscr \
+    vendor/xiaomi/gale/proprietary/vendor/etc/sn100u_pnx_ndi.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ndi.pnscr \
+    vendor/xiaomi/gale/proprietary/vendor/etc/sn100u_pnx_pcv.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_pcv.pnscr \
+    vendor/xiaomi/gale/proprietary/vendor/etc/sn100u_pnx_sst.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_sst.pnscr \
     vendor/xiaomi/gale/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/gale/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
     vendor/xiaomi/gale/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
@@ -504,6 +523,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     av-audio-types-aidl-V1-ndk \
+    7816-3-T1 \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
     android.hardware.audio.core-impl-mediatek \
@@ -522,6 +542,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.soundtrigger3-impl \
     audio.primary.mt6768 \
+    fingerprint.fpc.default \
+    fingerprint.goodix.default \
+    fingerprint.silead.default \
     gps.default \
     hwcomposer.mt6768 \
     kmsetkey.beanpod \
@@ -551,9 +574,12 @@ PRODUCT_PACKAGES += \
     lib3a.gma \
     lib3a.lce \
     lib3a.log \
+    lib3a.n3d3a \
+    libAVCSecureVencCA \
     libDR \
     libDefaultFpsActor \
     libFrameRecord \
+    libHEVCdec_sa.ca7.android \
     libJpgEncPipe \
     libMtkSpeechEnh \
     libMtkSpeechEnh_swb \
@@ -606,6 +632,7 @@ PRODUCT_PACKAGES += \
     libaudioprimarydevicehalifclient \
     libaudiotoolkit_vendor \
     libaurisysdemo \
+    libawinic_mtk_aurisys \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbluetooth_audio_session_aidl_mtk \
@@ -642,10 +669,12 @@ PRODUCT_PACKAGES += \
     libcamalgo.lmv \
     libcamalgo.lsc \
     libcamalgo.mfnr \
+    libcamalgo.n3d \
     libcamalgo.nr \
     libcamalgo.platform \
     libcamalgo.platform2 \
     libcamalgo.utility \
+    libcamalgo.vsf \
     libcamalgo.warp \
     libcamdrv_isp \
     libcamdrv_tuning_mgr \
@@ -654,22 +683,28 @@ PRODUCT_PACKAGES += \
     libcameracustom.eis \
     libcameracustom.plugin \
     libcameracustom \
+    libcapctrl \
     libcarrierconfig \
     libccci_util \
+    libchromanr \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_vpp_fa_plugin \
+    libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
     libcomposer_ext \
     libconnfem \
+    libcurl_xcap_md \
     libcustom_nvram \
     libcvsd_mtk \
     libeffecthal.base \
     libfeature.face \
     libfeature.stereo.provider \
+    libfeature.vsdof.hal \
     libfeature_3dnr \
     libfeature_eis \
     libfeature_fsc \
@@ -681,6 +716,9 @@ PRODUCT_PACKAGES += \
     libforkexecwrap \
     libformatter-mtk \
     libged \
+    libgf_ca \
+    libgf_hal \
+    libgoodixhwfingerprint \
     libgpu_aux \
     libgpud \
     libgralloc_extra \
@@ -688,14 +726,21 @@ PRODUCT_PACKAGES += \
     libgralloctypes_mtk \
     libgz_gp_client \
     libgz_uree \
+    libh264dec_customize \
+    libh264dec_sa.ca7 \
+    libh264dec_sd.ca7 \
+    libh264dec_se.ca7 \
     libheichal \
+    libhevce_sb.ca7.android \
     libhwm \
     libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
+    libimgsensorca \
     libimsg_log \
     libipsec_ims_shr \
+    libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     liblpcnr \
@@ -708,20 +753,26 @@ PRODUCT_PACKAGES += \
     libmialgoengine2 \
     libminiui \
     libmipc \
+    libmisight \
+    libmisound \
     libmmprofile \
     libmnetlink_v104 \
     libmnl-mtk \
     libmorpho_HdrChecker \
     libmorpho_ImageRefiner \
     libmorpho_ImageRefinerLite \
+    libmp4enc_sa.ca7 \
     libmpbase \
     libmsbc_mtk \
     libmsnr \
+    libmtcloader \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkcam.atmseventmgr \
+    libmtkcam.debugwrapper \
     libmtkcam.eventcallback \
     libmtkcam.featurepipe.capture \
+    libmtkcam.featurepipe.depthmap \
     libmtkcam.featurepipe.streaming \
     libmtkcam.featurepipe.vsdof_util \
     libmtkcam.logicalmodule \
@@ -739,12 +790,17 @@ PRODUCT_PACKAGES += \
     libmtkcam_device3_utils \
     libmtkcam_devicesessionpolicy \
     libmtkcam_diputils \
+    libmtkcam_dpe \
     libmtkcam_exif \
     libmtkcam_fdvt \
     libmtkcam_featurepolicy \
     libmtkcam_featureutils \
     libmtkcam_fwkutils \
     libmtkcam_grallocutils \
+    libmtkcam_hal_aidl_common \
+    libmtkcam_hal_aidl_device \
+    libmtkcam_hal_aidl_provider \
+    libmtkcam_hal_aidl_utils \
     libmtkcam_hwnode \
     libmtkcam_hwutils \
     libmtkcam_imem \
@@ -804,7 +860,10 @@ PRODUCT_PACKAGES += \
     libnvram_sec \
     libnxp_extamp_intf \
     liboemcrypto \
+    libpcdbi \
+    libpcdmr \
     libpixelflinger \
+    libpn557_fw \
     libpq_cust_base \
     libpqframework \
     libpqhdrmetaparser \
@@ -818,14 +877,17 @@ PRODUCT_PACKAGES += \
     librgbwlightsensor \
     librilfusion \
     librt_extamp_intf \
+    libsdrparser \
     libsensor_custom \
     libsilkybrightnesscore \
     libsimlock \
     libsimmelock \
+    libsl_fp_impl \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
+    libswtcc \
     libsysenv \
     libteeclientjni \
     libteeclientjni@1.1 \
@@ -833,13 +895,19 @@ PRODUCT_PACKAGES += \
     libthha \
     libthhclient \
     libtrm \
+    libudf \
+    libutinterface_custom_md \
+    libutinterface_md \
     libvcodec_oal \
     libvcodec_utility_v3a \
     libvcodecdrv_header_stub \
     libvcodecdrv_v3a \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
     libverno \
     libvia-ril \
     libviamipc-ril \
+    libvp8dec_sa.ca7 \
+    libvp9dec_sa.ca7 \
     libvpudv3a_vcodec \
     libwapi \
     libwifi-hal-mtk \
@@ -847,6 +915,7 @@ PRODUCT_PACKAGES += \
     libwifinvram \
     libwifinvramdata \
     libwpa_client \
+    libwpfa \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
     libdpframework \
@@ -858,6 +927,7 @@ PRODUCT_PACKAGES += \
     libpqparamparser \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
+    nfc_nci.thn31nfc.tms \
     ov50d40_truly_main_i_mipi_raw_IdxMgr \
     ov50d40_truly_main_i_mipi_raw_tuning \
     ov50d40_truly_main_i_mipi_raw_xts_IdxMgr \
@@ -870,6 +940,10 @@ PRODUCT_PACKAGES += \
     ov8856_truly_front_ii_mipi_raw_tuning \
     ov8856_truly_front_ii_mipi_raw_xts_IdxMgr \
     ov8856_truly_front_ii_mipi_raw_xts_tuning \
+    s5k4h7_mipi_raw_IdxMgr \
+    s5k4h7_mipi_raw_tuning \
+    s5k4h7sub_mipi_raw_IdxMgr \
+    s5k4h7sub_mipi_raw_tuning \
     s5kjns_sunny_main_ii_mipi_raw_IdxMgr \
     s5kjns_sunny_main_ii_mipi_raw_tuning \
     s5kjns_sunny_main_ii_mipi_raw_xts_IdxMgr \
@@ -887,6 +961,12 @@ PRODUCT_PACKAGES += \
     sc202cs_sunny_marco_i_mipi_raw_xts_IdxMgr \
     sc202cs_sunny_marco_i_mipi_raw_xts_tuning \
     sensors.touch.detect \
+    libmisoundfx_aidl \
+    tms-cos-dl-common \
+    tms-cos-dl-ree \
+    tms-utils \
+    vendor.mediatek.hardware.apmonitor-V1-ndk \
+    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
@@ -894,6 +974,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc-V1-ndk \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
+    vendor.mediatek.hardware.clientapi-V1-ndk \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V2-ndk \
@@ -923,11 +1004,15 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram-V1-ndk \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
+    vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
     vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
     vendor.microtrust.hardware.thh@2.0 \
+    vendor.tms.tmsnfc@1.0 \
+    vendor.tms.tmsnfc_aidl-V1-ndk \
+    vpp_hdrmeta_handler_plugin \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -947,11 +1032,8 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     mediatek-ims-base \
-    mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
@@ -977,6 +1059,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.keymaster@4.1-service.beanpod \
     android.hardware.media.c2-mediatek \
+    android.hardware.nfc-service-tms \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -986,6 +1069,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.silead.hardware.fingerprintext@1.0-service \
     vtservice_aidl \
     init.insmod \
     init_thh \
@@ -997,10 +1081,14 @@ PRODUCT_PACKAGES += \
     mtk_agpsd \
     mtk_lbs_service \
     nvram_daemon \
+    panelcolor_bin \
     rcs_volte_stack \
+    stp_dump3 \
     teei_daemon \
     v3avpud-64b \
     volte_clientapi_ua \
+    wmt_launcher \
+    wmt_loader \
     android.hardware.audio.parameter_parser.service \
     vtservice
 
@@ -1015,7 +1103,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
+    mediatek-telephony-base
