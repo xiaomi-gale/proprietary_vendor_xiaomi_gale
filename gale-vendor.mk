@@ -411,9 +411,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.volte_stack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_stack.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.volte_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_ua.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
@@ -427,8 +434,37 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/IdenTrustCommercialRootCA1.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/IdenTrustCommercialRootCA1.cer \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root-R3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root-R3.cer \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/gold.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/gold.cer \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/root-singtel.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/root-singtel.crt \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/thawte.der \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
+    vendor/xiaomi/gale/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
     vendor/xiaomi/gale/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
     vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/gale/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
@@ -686,7 +722,9 @@ PRODUCT_PACKAGES += \
     libcapctrl \
     libcarrierconfig \
     libccci_util \
+    libcharon-ss \
     libchromanr \
+    libcodec2_fsr \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -698,6 +736,8 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.pluginutils \
     libcomposer_ext \
     libconnfem \
+    libcrypto-mdapp \
+    libcurl-md \
     libcurl_xcap_md \
     libcustom_nvram \
     libcvsd_mtk \
@@ -733,6 +773,7 @@ PRODUCT_PACKAGES += \
     libheichal \
     libhevce_sb.ca7.android \
     libhwm \
+    libhydra \
     libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
@@ -744,6 +785,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     liblpcnr \
+    libmfido \
     libmfllcore \
     libmi_bokehpre \
     libmialgo_ai_vision \
@@ -755,6 +797,8 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmisight \
     libmisound \
+    libmlipay \
+    libmlipay@1.1 \
     libmmprofile \
     libmnetlink_v104 \
     libmnl-mtk \
@@ -765,6 +809,8 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libmsbc_mtk \
     libmsnr \
+    libmt \
+    libmt@1.3 \
     libmtcloader \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -880,13 +926,16 @@ PRODUCT_PACKAGES += \
     libsdrparser \
     libsensor_custom \
     libsilkybrightnesscore \
+    libsimaka \
     libsimlock \
     libsimmelock \
     libsl_fp_impl \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libssl-mdapp \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
+    libstrongswan \
     libswtcc \
     libsysenv \
     libteeclientjni \
@@ -906,6 +955,8 @@ PRODUCT_PACKAGES += \
     libverno \
     libvia-ril \
     libviamipc-ril \
+    libvolte_core_shr \
+    libvolte_xdmc_shr \
     libvp8dec_sa.ca7 \
     libvp9dec_sa.ca7 \
     libvpudv3a_vcodec \
@@ -914,8 +965,10 @@ PRODUCT_PACKAGES += \
     libwifical \
     libwifinvram \
     libwifinvramdata \
+    libwo \
     libwpa_client \
     libwpfa \
+    libwvkeybox \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
     libdpframework \
@@ -1008,11 +1061,15 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
+    vendor.mediatek.hardware.rcs-V1-ndk \
+    vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
+    vendor.microtrust.hardware.soter@1.0 \
     vendor.microtrust.hardware.thh@2.0 \
     vendor.tms.tmsnfc@1.0 \
     vendor.tms.tmsnfc_aidl-V1-ndk \
     vpp_hdrmeta_handler_plugin \
+    wechat.beanpod \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -1029,11 +1086,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     com.google.android.widevine.nonupdatable \
+    SoterService \
     ImsService \
     MtkGbaService \
     mediatek-ims-base \
-    mediatek-ims-extension-plugin \
     mediatek-telephony-base \
+    mediatek-ims-extension-plugin \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
@@ -1044,11 +1102,19 @@ PRODUCT_PACKAGES += \
     manifest_allocator.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_default.xml \
+    manifest_thh.xml \
+    manifest_vendor.xiaomi.hardware.mfidoca.xml \
+    manifest_vendor.xiaomi.hardware.mlipay.xml \
+    manifest_vendor.xiaomi.hardware.mtdservice.xml \
+    manifest_wechat.xml \
     mapper.mediatek.xml \
     mtk_lbs_service.xml \
     bp_kmsetkey_ca \
     ccci_mdinit \
     ccci_rpcd \
+    charon \
+    epdg_wod \
+    fidoca \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
@@ -1069,6 +1135,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.microtrust.hardware.soter@1.0-service \
+    vendor.microtrust.hardware.thh@2.0-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
     vtservice_aidl \
     init.insmod \
@@ -1077,16 +1145,27 @@ PRODUCT_PACKAGES += \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
     mi_thermald \
+    mlipayd@1.1 \
     mnld \
+    mtd@1.3 \
     mtk_agpsd \
     mtk_lbs_service \
     nvram_daemon \
     panelcolor_bin \
     rcs_volte_stack \
+    starter \
     stp_dump3 \
+    stroke \
     teei_daemon \
     v3avpud-64b \
     volte_clientapi_ua \
+    volte_imcb \
+    volte_imsm_93 \
+    volte_md_status \
+    volte_rcs_ua \
+    volte_stack \
+    volte_ua \
+    wfca \
     wmt_launcher \
     wmt_loader \
     android.hardware.audio.parameter_parser.service \
