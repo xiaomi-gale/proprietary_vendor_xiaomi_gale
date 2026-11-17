@@ -6,6 +6,15 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/gale
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Conf_MultipleTest.ini \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/chipone_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/chipone_firmware.bin \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_boe.bin \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/gt1151_default_firmware2.img:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/gt1151_default_firmware2.img \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/novatek_ts_hdl_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_hdl_fw.bin \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/novatek_ts_hdl_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_hdl_mp.bin \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/omnivision_hdl_firmware.img:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/omnivision_hdl_firmware.img \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/ovt_tcm_cap_limits.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ovt_tcm_cap_limits.csv \
+    vendor/xiaomi/gale/proprietary/recovery/root/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/remoteproc_scp \
     vendor/xiaomi/gale/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/xiaomi/gale/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/gale/proprietary/vendor/etc/AudioDump_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/AudioDump_dynamic.ds \
